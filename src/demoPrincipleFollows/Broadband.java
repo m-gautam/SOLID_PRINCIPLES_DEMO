@@ -1,6 +1,6 @@
 package demoPrincipleFollows;
 
-// this interface follows dependency inversion principle
+// these interface follows dependency segregation principle
 public interface Broadband {
     void getBroadbandCost(BroadbandPlan plan);
 }

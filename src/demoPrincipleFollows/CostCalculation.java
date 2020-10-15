@@ -1,9 +1,10 @@
 package demoPrincipleFollows;
 
 // this class follows single responsibility principle
-public class CostCalculation {
+public class CostCalculation implements BroadbandCost {
 
     // this function accepts only two arguments, so this follows good function structure
+    @Override
     public double getPlanCost(BroadbandPlan plan, int BroadbandFactor){
             double cost = 0;
             switch (plan.speed) {

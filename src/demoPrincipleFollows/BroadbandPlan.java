@@ -5,7 +5,7 @@ import lombok.Setter;
 
 // this class follows single responsibility principle
 // class naming best practices (used noun)
-public class BroadbandPlan implements Broadband {
+public class BroadbandPlan implements Broadband{
 
     @Getter
     @Setter
@@ -15,11 +15,10 @@ public class BroadbandPlan implements Broadband {
     @Setter
     public int durationInMonths;
 
-    // function naming best practices(used verb, also small functions)
     @Override
-    public void getBroadbandCost(BroadbandPlan plan){
+    public void getBroadbandCost(BroadbandPlan plan) {
         CostCalculation cost = new CostCalculation();
-        double calculatedCost  = cost.getPlanCost(plan, 2);
+        double calculatedCost  = cost.getPlanCost(plan, 1);
 
         System.out.println("Cost for plan you have selected will be " + calculatedCost);
     }

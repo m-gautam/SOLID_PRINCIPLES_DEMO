@@ -1,7 +1,7 @@
 package demoPrincipleFollows;
 
 // this class follows open closed principle
-public class DslBroadband  extends BroadbandPlan {
+public class DslBroadband extends BroadbandPlan   {
 
     @Override
     public void getBroadbandCost(BroadbandPlan plan) {
